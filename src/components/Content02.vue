@@ -261,6 +261,11 @@ export default {
     color: #fff;
   }
 }
+@media (max-width: 728px) {
+  .content02__main {
+    text-align: center;
+  }
+}
 @media (max-width: 560px) {
   .content02__header {
     flex-direction: column;

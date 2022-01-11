@@ -182,6 +182,14 @@ export default {
     padding-top: 22px;
   }
 }
+@media (max-width: 728px) {
+  .presentation__cube {
+    text-align: center;
+  }
+  .presentation__arrow-btn {
+    margin: auto;
+  }
+}
 @media (max-width: 419px) {
   .presentation__number {
     margin-top: -63px;

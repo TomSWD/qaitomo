@@ -193,25 +193,28 @@ export default {
 
 <style scoped>
 .hero__container {
-  /* display: flex; */
   max-width: 1480px;
   position: relative;
-  margin: auto;
+  margin: 0 auto;
 }
-/* .hero__image {
-  margin: auto;
-} */
+.hero__image {
+  position: absolute;
+  object-fit: cover;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 .hero__header {
   display: flex;
   justify-content: space-between;
-  /* top: 0px; */
   align-items: center;
-  /* position: absolute; */
   max-width: 1245px;
   width: 100%;
-  margin: 50px auto 0px;
-  padding: 0px 20px 165px 45px;
+  margin: 0 auto;
+  padding: 50px 20px 165px 45px;
 }
 .hero__nav-bar {
   display: flex;
@@ -235,9 +238,7 @@ export default {
 }
 .hero__content {
   display: flex;
-  /* position: absolute; */
   max-width: 1200px;
-  /* padding: 0px, 20px, 0px, 20px; */
   width: 100%;
   margin: 0 auto;
   padding: 0px 20px 0px 20px;
@@ -245,12 +246,10 @@ export default {
 }
 .hero__left {
   display: flex;
-  /* position: absolute; */
   flex-direction: column;
   max-width: 370px;
   width: 100%;
   padding-right: 20px;
-  /* margin-left: 8px; */
 }
 .hero__arrows {
   display: flex;
@@ -297,7 +296,6 @@ export default {
 .hero__right {
   display: flex;
   flex-direction: column;
-  /* position: absolute; */
   max-width: 164px;
   width: 100%;
   margin-top: 16px;
@@ -340,8 +338,7 @@ export default {
 }
 @media (max-width: 1000px) {
   .hero__header {
-    margin-top: 30px;
-    padding: 0px 20px 90px 20px;
+    padding: 0px 20px 40px 20px;
   }
   .burger-icon {
     display: block;
@@ -349,16 +346,25 @@ export default {
   .hero__nav-bar {
     display: none;
   }
+  .hero__heading {
+    font-size: 35px;
+  }
   .hero__slider {
-    margin-top: 100px;
+    margin-top: 140px;
   }
   .hero__social {
     margin-top: 80px;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 728px) {
+  .hero__container {
+    background-color: #eab7ad;
+  }
+  .hero__image {
+    object-fit: scale-down;
+  }
   .hero__header {
-    margin-top: 15px;
+    padding-top: 0px;
   }
   .qaitomo-logo {
     width: 70px;
@@ -366,8 +372,6 @@ export default {
   .burger-icon {
     width: 25px;
   }
-}
-@media (max-width: 545px) {
   .hero__content {
     flex-direction: column;
     text-align: center;
@@ -378,7 +382,7 @@ export default {
     padding-right: 0px;
   }
   .hero__arrows {
-    margin: auto; /* -------dlaczego musi być margin auto a nie działa alignItems?? */
+    margin: auto;
   }
   .hero__heading {
     margin-top: 15px;

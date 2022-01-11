@@ -137,7 +137,6 @@ export default {
 }
 .content01__picture {
   padding: 100px 0px 150px 0px;
-  /* margin-left: -140px; !!!!!!!!!!!!!!!!!!!!!!!!!DO SPRAWDZENIA!!!!!!!!!!!!!!!*/
   margin-left: -11.5%;
 }
 .content01__text {
@@ -166,6 +165,12 @@ export default {
   width: 140px;
   padding-top: 18px;
 }
+@media (max-width: 1355px) {
+  .content01__picture {
+    margin-left: auto;
+    padding-right: 20px;
+  }
+}
 @media (max-width: 1115px) {
   .content01__main {
     flex-direction: column;
@@ -180,7 +185,7 @@ export default {
   }
   .content01__text {
     margin: auto;
-    text-align: center;
+    text-align: left;
     padding: 50px 0px 0px 0px;
   }
   .content01__paragraph {
@@ -195,6 +200,11 @@ export default {
   }
   .content01__feat-2 {
     padding-top: 0px;
+  }
+}
+@media (max-width: 728px) {
+  .content01__text {
+    text-align: center;
   }
 }
 @media (max-width: 600px) {

@@ -132,7 +132,6 @@ export default {
   }
   .contact__cta {
     width: 100%;
-    text-align: center;
     align-items: center;
     margin-top: 0px;
     font-size: 18px;
@@ -151,15 +150,15 @@ export default {
   .contact__main {
     flex-direction: column;
   }
-  .contact__office,
-  .contact__mail {
-    text-align: center;
-  }
-  .contact__mail {
-    align-items: center;
-  }
   .contact__txt {
     padding-top: 5px;
+  }
+}
+@media (max-width: 728px) {
+  .contact__office,
+  .contact__mail,
+  .cta__content {
+    text-align: center;
   }
 }
 @media (max-width: 500px) {
