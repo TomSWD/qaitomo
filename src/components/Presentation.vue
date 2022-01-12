@@ -183,11 +183,15 @@ export default {
   }
 }
 @media (max-width: 728px) {
+  .presentation__container {
+    padding: 100px 20px 50px 20px;
+  }
   .presentation__cube {
     text-align: center;
   }
   .presentation__arrow-btn {
     margin: auto;
+    padding-top: 20px;
   }
 }
 @media (max-width: 419px) {

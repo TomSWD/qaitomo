@@ -13,7 +13,8 @@
             <div class="contact__mail">
               <h5>CONTACTS</h5>
               <div class="contact__txt">
-                holaagency@gmail.com +1 900 577 473 84
+                holaagency@gmail.com <br />
+                +1 900 577 473 84
               </div>
             </div>
           </div>
@@ -75,8 +76,6 @@ export default {
   display: flex;
   flex-direction: column;
   max-width: 166px;
-  /* padding-left: 127px; */
-  /* padding-right: 127px; */
 }
 .contact__txt {
   font-size: 15px;
@@ -159,6 +158,9 @@ export default {
   .contact__mail,
   .cta__content {
     text-align: center;
+  }
+  .contact__txt {
+    align-self: center;
   }
 }
 @media (max-width: 500px) {

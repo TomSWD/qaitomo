@@ -113,7 +113,6 @@ export default {
   display: flex;
   font-weight: 700;
   font-size: 13px;
-  /* max-width: 263px; */
   width: 20%;
   height: 36px;
   border-bottom: 2px solid #d4d4d4;

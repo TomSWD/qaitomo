@@ -169,14 +169,13 @@ export default {
 .content02__text--right {
   display: flex;
   flex-direction: column;
-  width: 458px; /* max-width działa gorzej niż na sztywno??? */
+  width: 458px;
   gap: 20px;
 }
 .content02__text--right {
   width: 361px;
   margin-left: 127px;
 }
-/* <<<<<<<<---------------------------------------------------->>>>>>>>>>>>>>>>> */
 .content02__pic-container {
   padding-top: 98px;
   max-width: 1145px;
@@ -203,7 +202,7 @@ export default {
   align-items: center;
   justify-content: space-between;
   font-size: 15px;
-  width: 217px; /* ponownie tylko na sztywno się sprawdza (poniżej 830px) */
+  width: 217px;
   padding-top: 12px;
 }
 .content02__arrows {
@@ -231,7 +230,7 @@ export default {
     margin-left: calc(100% - 400px);
   }
   .content02__pic-container {
-    text-align: center; /*Dlaczego to działa???? :D  */
+    text-align: center;
   }
 }
 @media (max-width: 830px) {
