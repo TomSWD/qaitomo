@@ -113,7 +113,7 @@ export default {
   justify-content: space-between;
   max-width: 1200px;
   padding: 0px 20px 0px 20px;
-  margin: 140px auto;
+  margin: 140px auto 30px;
 }
 .footer__social {
   display: flex;
